@@ -648,3 +648,10 @@ table{border-collapse:collapse;width:100%}
   .rtr-subnav__scroll,.rtr-subnav__scroll.is-more-left,.rtr-subnav__scroll.is-more-right{flex-wrap:nowrap;justify-content:space-between;gap:4px}
   .rtr-subnav__link{padding:0 10px}
 }
+
+/* #8 Company logos in monogram nodes (monochrome) */
+.rtr-mono-node{background:#fff}
+.rtr-mono-node img{width:28px;height:28px;object-fit:contain;filter:grayscale(1) contrast(1.15)}
+
+/* #6 Podium: first place framed in red (position, not brand) */
+.rtr-pcard--1{border-color:var(--rtr-red)}
