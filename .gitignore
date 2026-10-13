@@ -1,0 +1,11 @@
+# Internal / not for the public repo
+00-TZ-dlya-claude-code.md
+CLAUDE.md
+settings.json
+stitch_russian_red_teaming_directory/
+.claude/
+
+# Local artifacts
+temporary screenshots/
+*.zip
+docs/_harness.html

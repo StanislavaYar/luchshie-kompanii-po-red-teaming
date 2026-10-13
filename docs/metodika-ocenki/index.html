@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Методика рейтинга компаний по Red Teaming: 7 критериев</title>
+<meta name="description" content="Как мы оцениваем компании по Red Teaming: 7 критериев с весами, шкала 0-10, источники данных и расчет итогового балла из 100.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://luchshie-kompanii-po-red-teaming.com/metodika-ocenki/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Методика рейтинга компаний по Red Teaming: 7 критериев">
+<meta property="og:description" content="Как мы оцениваем компании по Red Teaming: 7 критериев с весами, шкала 0-10, источники данных и расчет итогового балла из 100.">
+<meta property="og:url" content="https://luchshie-kompanii-po-red-teaming.com/metodika-ocenki/">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:site_name" content="Red Team Rating">
+<meta name="theme-color" content="#141417">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="preload" href="../fonts/onest-cyrillic-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../fonts/unbounded-cyrillic-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/rtr.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "name": "Методика рейтинга компаний по Red Teaming: 7 критериев",
+      "description": "Как мы оцениваем компании по Red Teaming: 7 критериев с весами, шкала 0-10, источники данных и расчет итогового балла из 100.",
+      "url": "https://luchshie-kompanii-po-red-teaming.com/metodika-ocenki/",
+      "inLanguage": "ru-RU",
+      "dateModified": "2026-10-20",
+      "isPartOf": { "@type": "WebSite", "name": "Red Team Rating", "url": "https://luchshie-kompanii-po-red-teaming.com/" },
+      "publisher": { "@type": "Organization", "name": "Red Team Rating", "url": "https://luchshie-kompanii-po-red-teaming.com/", "email": "research@luchshie-kompanii-po-red-teaming.com" }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Главная", "item": "https://luchshie-kompanii-po-red-teaming.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Методика оценки", "item": "https://luchshie-kompanii-po-red-teaming.com/metodika-ocenki/" }
+      ]
+    }
+  ]
+}
+</script>
+<script src="../assets/rtr.js" defer></script>
+</head>
+<body>
+<a class="rtr-skip" href="#main">Перейти к содержанию</a>
+<header class="rtr-header" id="top" role="banner">
+  <div class="rtr-container rtr-header__bar">
+    <a class="rtr-logo" href="../" aria-label="Red Team Rating — на главную">Red Team Rating<span class="rtr-logo__dot" aria-hidden="true"></span></a>
+    <button class="rtr-nav-toggle" type="button" aria-expanded="false" aria-controls="rtr-nav" aria-label="Открыть меню"><span class="rtr-nav-toggle__icon" aria-hidden="true"></span></button>
+    <nav class="rtr-nav" id="rtr-nav" role="navigation" aria-label="Main navigation">
+      <ul class="rtr-nav__list">
+        <li><a class="rtr-nav__link" href="../">Рейтинг</a></li>
+        <li><a class="rtr-nav__link" href="../metodika-ocenki/" aria-current="page">Методика</a></li>
+        <li class="rtr-nav__group">
+          <button class="rtr-nav__group-title" type="button" aria-haspopup="true">Гайды</button>
+          <ul class="rtr-nav__sub">
+            <li><a class="rtr-nav__link" href="../red-team-vs-pentest/">Red Team vs пентест</a></li>
+            <li><a class="rtr-nav__link" href="../red-blue-purple-team/">Red, Blue и Purple Team</a></li>
+            <li><a class="rtr-nav__link" href="../ai-red-teaming/">AI Red Teaming</a></li>
+          </ul>
+        </li>
+        <li><a class="rtr-nav__link" href="../ob-issledovanii/">Об исследовании</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<section class="rtr-band rtr-band--dark rtr-pagehero">
+  <div class="rtr-container">
+    <nav class="rtr-crumbs" aria-label="Хлебные крошки"><ol><li><a href="../">Главная</a></li><li><span aria-current="page">Методика оценки</span></li></ol></nav>
+    <p class="rtr-label"><span class="rtr-label__slash">//</span> Методика</p>
+    <h1 class="rtr-h1">Методика оценки компаний по Red Teaming</h1>
+    <p class="rtr-lead">Рейтинг Red Team Rating оценивает 12 компаний по 7 критериям с общим весом 100%. Каждый критерий получает от 0 до 10 баллов, итоговый балл считается по формуле взвешенной суммы и лежит в диапазоне от 0 до 100.</p>
+    <p class="rtr-pagehero__meta"><span>Обновлено <time datetime="2026-10-20">20.10.2026</time></span><span>Автор: <a href="../analiticheskaya-gruppa/">Аналитическая группа Red Team Rating</a></span></p>
+  </div>
+</section>
+<section class="rtr-band rtr-band--light">
+  <div class="rtr-container">
+    <article class="rtr-article rtr-prose">
+      <p>Методику составила <a href="../analiticheskaya-gruppa/">аналитическая группа проекта</a>. Методика опирается на практику Red Teaming по <a href="https://attack.mitre.org/tactics/enterprise/" target="_blank" rel="noopener">MITRE ATT&amp;CK</a>, <a href="https://www.ecb.europa.eu/paym/cyber-resilience/tiber-eu/html/index.en.html" target="_blank" rel="noopener">TIBER-EU</a> и <a href="https://www.bankofengland.co.uk/financial-stability/operational-resilience-of-the-financial-sector/cbest-threat-intelligence-led-assessments-implementation-guide" target="_blank" rel="noopener">CBEST</a>.</p>
+
+      <h2 id="edinaya-shkala">Почему рынку нужна единая шкала</h2>
+      <p>Российский рынок Red Teaming не имеет общего стандарта услуги. Обзор Anti-Malware.ru от мая 2026 года отмечает, что вендоры по-разному трактуют содержание Red Teaming. Одни выделяют его в отдельную услугу, другие включают в пентест или комплексную оценку защищенности.</p>
+      <p>Заказчик в такой ситуации сравнивает услуги с разным составом. Шкала из 7 критериев приводит предложения к общему знаменателю: что проверяют, как глубоко и что заказчик получает на выходе.</p>
+
+      <h2 id="kriterii">7 критериев и их вес</h2>
+      <div class="rtr-table-wrap">
+        <table class="rtr-table">
+          <caption>7 критериев оценки и их вес</caption>
+          <thead><tr><th scope="col">Критерий</th><th scope="col">Вес</th><th scope="col">Что оцениваем</th><th scope="col">10 баллов, если</th></tr></thead>
+          <tbody>
+            <tr><th scope="row" class="rtr-table__key">1. Работа на бизнес-цель</th><td data-label="Вес" class="rtr-mono">20%</td><td data-label="Что оцениваем">строится ли операция вокруг цели заказчика</td><td data-label="10 баллов, если">цель и сценарий согласуются под модель угроз заказчика</td></tr>
+            <tr><th scope="row" class="rtr-table__key">2. Отчет и журнал действий</th><td data-label="Вес" class="rtr-mono">20%</td><td data-label="Что оцениваем">состав итоговых документов</td><td data-label="10 баллов, если">отчет содержит хронологию, временные метки, IoC и журнал действий</td></tr>
+            <tr><th scope="row" class="rtr-table__key">3. Модель команды</th><td data-label="Вес" class="rtr-mono">15%</td><td data-label="Что оцениваем">кто ведет проект и насколько он вовлечен</td><td data-label="10 баллов, если">проект ведет старший специалист лично от начала до конца</td></tr>
+            <tr><th scope="row" class="rtr-table__key">4. Собственные исследования</th><td data-label="Вес" class="rtr-mono">15%</td><td data-label="Что оцениваем">найденные уязвимости и публикации</td><td data-label="10 баллов, если">у команды есть CVE, записи в БДУ ФСТЭК и регулярные исследования</td></tr>
+            <tr><th scope="row" class="rtr-table__key">5. Реалистичность и скрытность</th><td data-label="Вес" class="rtr-mono">10%</td><td data-label="Что оцениваем">приближенность атаки к реальной</td><td data-label="10 баллов, если">защита не знает о проекте, команда обходит СЗИ</td></tr>
+            <tr><th scope="row" class="rtr-table__key">6. Отраслевая экспертиза</th><td data-label="Вес" class="rtr-mono">10%</td><td data-label="Что оцениваем">опыт в финтехе, банках, крипто и промышленности</td><td data-label="10 баллов, если">компания показывает опыт в профильных отраслях</td></tr>
+            <tr><th scope="row" class="rtr-table__key">7. Прозрачность услуги</th><td data-label="Вес" class="rtr-mono">10%</td><td data-label="Что оцениваем">что опубликовано до первого звонка</td><td data-label="10 баллов, если">на сайте есть этапы, сроки, состав отчета и цена</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Почему у цели и отчета наибольший вес</h3>
+      <p>Работа на бизнес-цель и отчет получили по 20%, потому что именно они отличают Red Teaming от пентеста. Операция без цели превращается в поиск уязвимостей. Отчет без журнала действий не дает Blue Team сопоставить атаку со своими логами SIEM.</p>
+      <h3>Почему модель команды и исследования весят по 15%</h3>
+      <p>Квалификация конкретных людей на проекте определяет глубину атаки сильнее, чем размер компании. Собственные исследования уязвимостей (CVE и записи в БДУ ФСТЭК) подтверждают эту квалификацию публично. Мы не учитываем сертификаты отдельно: они не показывают, кто именно работает на проекте.</p>
+
+      <h2 id="shkala">Шкала 0-10</h2>
+      <p>Каждый критерий оценивается по пятиуровневой шкале:</p>
+      <ul>
+        <li><strong>9-10 баллов.</strong> Компания публично подтверждает критерий конкретными данными: цифрами, примерами отчетов, сроками.</li>
+        <li><strong>7-8 баллов.</strong> Критерий описан на странице услуги, но без количественных данных.</li>
+        <li><strong>5-6 баллов.</strong> Критерий упоминается частично или только в сторонних источниках.</li>
+        <li><strong>3-4 балла.</strong> Критерий описан общими словами без деталей.</li>
+        <li><strong>0-2 балла.</strong> Данных о критерии нет.</li>
+      </ul>
+
+      <h2 id="raschet">Как считается итоговый балл</h2>
+      <p>Итоговый балл равен сумме произведений оценки на вес критерия, деленной на 10. Пример расчета для компании с оценками 10, 10, 10, 8, 8, 10 и 6:</p>
+      <pre class="rtr-formula">(10×20 + 10×20 + 10×15 + 8×15 + 8×10 + 10×10 + 6×10) / 10 = 91</pre>
+      <p>При равенстве итогового балла выше ставится компания с большей оценкой по критерию 1. Если оценки совпадают и там, сравнивается критерий 2.</p>
+    </article>
+  </div>
+</section>
+<section class="rtr-band rtr-band--dark" id="ocenki-2026" aria-labelledby="h-scores">
+  <div class="rtr-container">
+    <div class="rtr-sechead">
+      <div>
+        <p class="rtr-label"><span class="rtr-label__slash">//</span> Оценки</p>
+        <h2 class="rtr-h2" id="h-scores">Итоговые оценки 2026</h2>
+      </div>
+    </div>
+    <div class="rtr-table-wrap">
+      <table class="rtr-table rtr-table--scores">
+        <caption>Итоговые оценки компаний по 7 критериям</caption>
+        <thead><tr><th scope="col">Место</th><th scope="col">Компания</th><th scope="col">К1</th><th scope="col">К2</th><th scope="col">К3</th><th scope="col">К4</th><th scope="col">К5</th><th scope="col">К6</th><th scope="col">К7</th><th scope="col">Итог</th></tr></thead>
+        <tbody>
+          <tr><td class="rtr-cell-rank" data-label="Место"><span class="rtr-rank">#1</span></td><th scope="row" class="rtr-table__key"><a href="../#company-1">Paranoid Security</a></th><td data-label="К1" class="rtr-table__num">10</td><td data-label="К2" class="rtr-table__num">10</td><td data-label="К3" class="rtr-table__num">10</td><td data-label="К4" class="rtr-table__num">8</td><td data-label="К5" class="rtr-table__num">8</td><td data-label="К6" class="rtr-table__num">10</td><td data-label="К7" class="rtr-table__num">6</td><td data-label="Итог" class="rtr-table__num rtr-table__total">91</td></tr>
+          <tr><td class="rtr-cell-rank" data-label="Место"><span class="rtr-rank">#2</span></td><th scope="row" class="rtr-table__key"><a href="../#company-2">Лаборатория Касперского</a></th><td data-label="К1" class="rtr-table__num">9</td><td data-label="К2" class="rtr-table__num">10</td><td data-label="К3" class="rtr-table__num">7</td><td data-label="К4" class="rtr-table__num">9</td><td data-label="К5" class="rtr-table__num">9</td><td data-label="К6" class="rtr-table__num">8</td><td data-label="К7" class="rtr-table__num">9</td><td data-label="Итог" class="rtr-table__num rtr-table__total">88</td></tr>
+          <tr><td class="rtr-cell-rank" data-label="Место"><span class="rtr-rank">#3</span></td><th scope="row" class="rtr-table__key"><a href="../#company-3">BI.ZONE</a></th><td data-label="К1" class="rtr-table__num">9</td><td data-label="К2" class="rtr-table__num">8</td><td data-label="К3" class="rtr-table__num">7</td><td data-label="К4" class="rtr-table__num">10</td><td data-label="К5" class="rtr-table__num">8</td><td data-label="К6" class="rtr-table__num">8</td><td data-label="К7" class="rtr-table__num">9</td><td data-label="Итог" class="rtr-table__num rtr-table__total">84,5</td></tr>
+          <tr><td class="rtr-cell-rank" data-label="Место"><span class="rtr-rank">#4</span></td><th scope="row" class="rtr-table__key"><a href="../#company-4">Positive Technologies</a></th><td data-label="К1" class="rtr-table__num">9</td><td data-label="К2" class="rtr-table__num">8</td><td data-label="К3" class="rtr-table__num">7</td><td data-label="К4" class="rtr-table__num">10</td><td data-label="К5" class="rtr-table__num">9</td><td data-label="К6" class="rtr-table__num">7</td><td data-label="К7" class="rtr-table__num">5</td><td data-label="Итог" class="rtr-table__num rtr-table__total">80,5</td></tr>
+          <tr><td class="rtr-cell-rank" data-label="Место"><span class="rtr-rank">#5</span></td><th scope="row" class="rtr-table__key"><a href="../#company-5">F6</a></th><td data-label="К1" class="rtr-table__num">9</td><td data-label="К2" class="rtr-table__num">9</td><td data-label="К3" class="rtr-table__num">7</td><td data-label="К4" class="rtr-table__num">8</td><td data-label="К5" class="rtr-table__num">8</td><td data-label="К6" class="rtr-table__num">8</td><td data-label="К7" class="rtr-table__num">5</td><td data-label="Итог" class="rtr-table__num rtr-table__total">79,5</td></tr>
+          <tr><td class="rtr-cell-rank" data-label="Место"><span class="rtr-rank">#6</span></td><th scope="row" class="rtr-table__key"><a href="../#company-6">Awillix</a></th><td data-label="К1" class="rtr-table__num">8</td><td data-label="К2" class="rtr-table__num">9</td><td data-label="К3" class="rtr-table__num">9</td><td data-label="К4" class="rtr-table__num">6</td><td data-label="К5" class="rtr-table__num">10</td><td data-label="К6" class="rtr-table__num">6</td><td data-label="К7" class="rtr-table__num">6</td><td data-label="Итог" class="rtr-table__num rtr-table__total">78,5</td></tr>
+          <tr><td class="rtr-cell-rank" data-label="Место"><span class="rtr-rank">#7</span></td><th scope="row" class="rtr-table__key"><a href="../#company-7">DSEC by Solar</a></th><td data-label="К1" class="rtr-table__num">8</td><td data-label="К2" class="rtr-table__num">8</td><td data-label="К3" class="rtr-table__num">7</td><td data-label="К4" class="rtr-table__num">8</td><td data-label="К5" class="rtr-table__num">9</td><td data-label="К6" class="rtr-table__num">7</td><td data-label="К7" class="rtr-table__num">7</td><td data-label="Итог" class="rtr-table__num rtr-table__total">77,5</td></tr>
+          <tr><td class="rtr-cell-rank" data-label="Место"><span class="rtr-rank">#8</span></td><th scope="row" class="rtr-table__key"><a href="../#company-8">Angara Security</a></th><td data-label="К1" class="rtr-table__num">8</td><td data-label="К2" class="rtr-table__num">10</td><td data-label="К3" class="rtr-table__num">6</td><td data-label="К4" class="rtr-table__num">6</td><td data-label="К5" class="rtr-table__num">9</td><td data-label="К6" class="rtr-table__num">7</td><td data-label="К7" class="rtr-table__num">4</td><td data-label="Итог" class="rtr-table__num rtr-table__total">74</td></tr>
+          <tr><td class="rtr-cell-rank" data-label="Место"><span class="rtr-rank">#9</span></td><th scope="row" class="rtr-table__key"><a href="../#company-9">Инфосистемы Джет</a></th><td data-label="К1" class="rtr-table__num">8</td><td data-label="К2" class="rtr-table__num">8</td><td data-label="К3" class="rtr-table__num">6</td><td data-label="К4" class="rtr-table__num">7</td><td data-label="К5" class="rtr-table__num">8</td><td data-label="К6" class="rtr-table__num">7</td><td data-label="К7" class="rtr-table__num">6</td><td data-label="Итог" class="rtr-table__num rtr-table__total">72,5</td></tr>
+          <tr><td class="rtr-cell-rank" data-label="Место"><span class="rtr-rank">#10</span></td><th scope="row" class="rtr-table__key"><a href="../#company-10">Информзащита</a></th><td data-label="К1" class="rtr-table__num">7</td><td data-label="К2" class="rtr-table__num">7</td><td data-label="К3" class="rtr-table__num">6</td><td data-label="К4" class="rtr-table__num">6</td><td data-label="К5" class="rtr-table__num">8</td><td data-label="К6" class="rtr-table__num">8</td><td data-label="К7" class="rtr-table__num">8</td><td data-label="Итог" class="rtr-table__num rtr-table__total">70</td></tr>
+          <tr><td class="rtr-cell-rank" data-label="Место"><span class="rtr-rank">#11</span></td><th scope="row" class="rtr-table__key"><a href="../#company-11">RTM Group</a></th><td data-label="К1" class="rtr-table__num">6</td><td data-label="К2" class="rtr-table__num">6</td><td data-label="К3" class="rtr-table__num">7</td><td data-label="К4" class="rtr-table__num">5</td><td data-label="К5" class="rtr-table__num">7</td><td data-label="К6" class="rtr-table__num">8</td><td data-label="К7" class="rtr-table__num">9</td><td data-label="Итог" class="rtr-table__num rtr-table__total">66</td></tr>
+          <tr><td class="rtr-cell-rank" data-label="Место"><span class="rtr-rank">#12</span></td><th scope="row" class="rtr-table__key"><a href="../#company-12">НТЦ Вулкан</a></th><td data-label="К1" class="rtr-table__num">6</td><td data-label="К2" class="rtr-table__num">6</td><td data-label="К3" class="rtr-table__num">6</td><td data-label="К4" class="rtr-table__num">5</td><td data-label="К5" class="rtr-table__num">6</td><td data-label="К6" class="rtr-table__num">6</td><td data-label="К7" class="rtr-table__num">6</td><td data-label="Итог" class="rtr-table__num rtr-table__total">58,5</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="rtr-note">Расшифровка: К1 бизнес-цель, К2 отчет, К3 модель команды, К4 исследования, К5 скрытность, К6 отраслевая экспертиза, К7 прозрачность.</p>
+  </div>
+</section>
+<section class="rtr-band rtr-band--light">
+  <div class="rtr-container">
+    <article class="rtr-article rtr-prose">
+      <h2 id="istochniki-dannyh" style="margin-top:0">Источники данных</h2>
+      <p>Аналитическая группа берет данные из трех типов источников:</p>
+      <ol>
+        <li><strong>Страницы услуг компаний.</strong> Основной источник для критериев 1, 2, 5 и 7. Ссылка на страницу стоит в каждом профиле.</li>
+        <li><strong>Публичные исследования.</strong> Записи в <a href="https://bdu.fstec.ru/" target="_blank" rel="noopener">БДУ ФСТЭК</a>, публикации CVE, технические блоги команд. Источник для критерия 4.</li>
+        <li><strong>Отраслевые обзоры.</strong> <a href="https://www.anti-malware.ru/analytics/Market_Analysis/Red-Team-Operations-market-overview" target="_blank" rel="noopener">Обзор рынка Red Team Operations на Anti-Malware.ru</a> и материалы отраслевых СМИ. Используются, когда страница услуги недоступна.</li>
+      </ol>
+      <p>Мы не используем закрытые данные, отзывы без подтверждения и оценки, которые компании присылают о себе. Порядок проверки описан на странице <a href="../proverka-dannyh/">Проверка и обновление данных</a>.</p>
+
+      <h2 id="otbor">Какие компании попадают в рейтинг</h2>
+      <p>В рейтинг входят российские компании, которые выполняют Red Teaming собственной командой и описывают услугу публично. Мы не включаем:</p>
+      <ul>
+        <li>компании, которые перепродают услугу субподрядчика без своей команды;</li>
+        <li>провайдеров, у которых Red Teaming не описан ни на сайте, ни в открытых публикациях;</li>
+        <li>платформы bug bounty и автоматизированные сканеры;</li>
+        <li>компании без российского юридического лица или представительства.</li>
+      </ul>
+      <p>Компания, которой нет в списке, может подать <a href="../zayavka-na-uchastie/">заявку на участие</a>. Новая компания проходит оценку по тем же 7 критериям.</p>
+
+      <h2 id="obnovlenie">Как часто мы обновляем рейтинг</h2>
+      <p>Аналитическая группа пересматривает данные раз в квартал. Последняя проверка прошла 20 октября 2026 года, следующая запланирована на январь 2027 года. Если компания меняет услугу между обновлениями, мы вносим правку после проверки источника и указываем дату изменения.</p>
+      <p>Порядок проверки источников описан на странице <a href="../proverka-dannyh/">Проверка и обновление данных</a>.</p>
+
+      <nav class="rtr-related" aria-label="Связанные материалы">
+        <p class="rtr-label"><span class="rtr-label__slash">//</span> Связанные материалы</p>
+        <ul class="rtr-related__list">
+          <li><a href="../">Рейтинг компаний по Red Teaming</a></li>
+          <li><a href="../proverka-dannyh/">Проверка и обновление данных</a></li>
+          <li><a href="../zayavka-na-uchastie/">Заявка на участие</a></li>
+        </ul>
+      </nav>
+    </article>
+  </div>
+</section>
+</main>
+<footer class="rtr-footer" role="contentinfo">
+  <div class="rtr-container">
+    <div class="rtr-footer__top">
+      <div class="rtr-footer__about">
+        <a class="rtr-logo" href="../">Red Team Rating<span class="rtr-logo__dot" aria-hidden="true"></span></a>
+        <p>Исследование рынка Red Teaming в России и СНГ: 12 компаний, 7 критериев, данные со страниц услуг. Последняя проверка 20 октября 2026.</p>
+      </div>
+      <div class="rtr-footer__cols">
+        <div>
+          <p class="rtr-footer__title">Рейтинг</p>
+          <ul>
+            <li><a href="../">Рейтинг 2026</a></li>
+            <li><a href="../#comparison">Сводная таблица</a></li>
+            <li><a href="../#profili">Профили компаний</a></li>
+            <li><a href="../#faq">Частые вопросы</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="rtr-footer__title">Гайды</p>
+          <ul>
+            <li><a href="../red-team-vs-pentest/">Red Team vs пентест</a></li>
+            <li><a href="../red-blue-purple-team/">Red, Blue и Purple Team</a></li>
+            <li><a href="../ai-red-teaming/">AI Red Teaming</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="rtr-footer__title">Об исследовании</p>
+          <ul>
+            <li><a href="../ob-issledovanii/">Об исследовании</a></li>
+            <li><a href="../metodika-ocenki/" aria-current="page">Методика</a></li>
+            <li><a href="../analiticheskaya-gruppa/">Аналитическая группа</a></li>
+            <li><a href="../proverka-dannyh/">Проверка данных</a></li>
+            <li><a href="../zayavka-na-uchastie/">Заявка на участие</a></li>
+            <li><a href="../obratnaya-svyaz/">Обратная связь</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="rtr-footer__title">Правовое</p>
+          <ul>
+            <li><a href="../obrabotka-dannyh/">Обработка данных</a></li>
+            <li><a href="../terminy/">Термины</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="rtr-footer__bottom">
+      <span>© 2026 Red Team Rating</span>
+      <span>Ссылки на компании не являются партнерскими</span>
+    </div>
+  </div>
+</footer>
+<a class="rtr-totop" href="#top" aria-label="Наверх"><svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true" focusable="false"><path d="M9 15V3M3.5 8.5L9 3l5.5 5.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+</body>
+</html>

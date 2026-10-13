@@ -1,0 +1,93 @@
+<section class="rtr-band rtr-band--dark rtr-pagehero">
+  <div class="rtr-container">
+    <nav class="rtr-crumbs" aria-label="Хлебные крошки"><ol><li><a href="/">Главная</a></li><li><span aria-current="page">Red Team, Blue Team и Purple Team</span></li></ol></nav>
+    <p class="rtr-label"><span class="rtr-label__slash">//</span> Гайд</p>
+    <h1 class="rtr-h1">Red Team, Blue Team и Purple Team: роли в кибербезопасности</h1>
+    <p class="rtr-lead">Red Team атакует инфраструктуру по правилам реальных злоумышленников, Blue Team обнаруживает атаку и реагирует, Purple Team объединяет обе стороны для совместного разбора. Цветные команды пришли в кибербезопасность из военных учений, где «красные» играли противника, а «синие» оборону.</p>
+    <p class="rtr-pagehero__meta"><span>Обновлено <time datetime="2026-10-20">20.10.2026</time></span><span>Автор: <a href="/analiticheskaya-gruppa/">Аналитическая группа Red Team Rating</a></span></p>
+  </div>
+</section>
+<section class="rtr-band rtr-band--light">
+  <div class="rtr-container">
+    <article class="rtr-article rtr-prose">
+      <p>White Team дополняет тройку как организатор учений. Ниже разобраны задачи каждой команды, их инструменты и порядок совместной работы.</p>
+
+      <h2 id="red-team">Red Team: атакующая сторона</h2>
+      <p>Red Team - это команда специалистов, которая воспроизводит тактики, техники и процедуры (TTP) реальных злоумышленников для проверки защиты. Задача Red Team - дойти до согласованной бизнес-цели незаметно для службы ИБ.</p>
+      <p>Red Team работает скрытно. О проекте знают 1-2 человека из высшего руководства, остальная компания реагирует как на настоящую атаку. Команда обходит EDR, SIEM и антивирус, используя собственные полезные нагрузки.</p>
+      <p>Red Team закрывает несколько ролей: разведка (OSINT), социальная инженерия, разработка инструментов и анализ Active Directory. Команды опираются на матрицу <a href="https://attack.mitre.org/tactics/enterprise/" target="_blank" rel="noopener">MITRE ATT&amp;CK</a> из 14 тактик.</p>
+      <h3>Инструменты Red Team</h3>
+      <p>Red Team использует 4 группы инструментов:</p>
+      <ul>
+        <li><strong>Фреймворки управления атакой (C2)</strong> для контроля скомпрометированных узлов.</li>
+        <li><strong>Инструменты анализа Active Directory</strong> для поиска путей к привилегиям домена.</li>
+        <li><strong>Платформы фишинга</strong> для доставки нагрузок через сотрудников.</li>
+        <li><strong>Собственные полезные нагрузки</strong> для обхода антивируса и EDR.</li>
+      </ul>
+
+      <h2 id="blue-team">Blue Team: защищающаяся сторона</h2>
+      <p>Blue Team - это служба ИБ и SOC, которые обнаруживают атаки и реагируют на инциденты. Задача Blue Team - заметить активность Red Team и остановить ее до достижения цели.</p>
+      <p>Blue Team работает с SIEM, EDR и системами обнаружения вторжений. Во время учений Red Team синяя команда обычно не знает о проекте, поэтому ее реакция совпадает с реакцией на реальную атаку.</p>
+      <p>Blue Team измеряет свою работу двумя метриками: скорость обнаружения атаки и скорость реагирования. Учения Red Team показывают, на каком этапе атаки защита заметила активность и сколько времени заняла реакция.</p>
+
+      <h2 id="purple-team">Purple Team: совместная работа</h2>
+      <p>Purple Team - это формат совместной работы Red Team и Blue Team над разбором атаки. Название появилось из смешения красного и синего цветов. Цель Purple Team - превратить находки атакующих в новые правила обнаружения.</p>
+      <p>Purple Team полезен, когда компании нужен быстрый результат, а не скрытая проверка. Red Team показывает технику атаки, Blue Team сразу настраивает правило детектирования и проверяет, срабатывает ли оно. «СЕЙФТИ ГАРДЕН» включает элементы Purple Teaming в проверку высокоуровневых функций управления ИБ.</p>
+      <h3>Red Team или Purple Team</h3>
+      <div class="rtr-table-wrap">
+        <table class="rtr-table">
+          <caption>Red Team или Purple Team</caption>
+          <thead><tr><th scope="col">Параметр</th><th scope="col">Red Team</th><th scope="col">Purple Team</th></tr></thead>
+          <tbody>
+            <tr><th scope="row" class="rtr-table__key">Знает ли защита</th><td data-label="Red Team">нет</td><td data-label="Purple Team">да, команды работают вместе</td></tr>
+            <tr><th scope="row" class="rtr-table__key">Цель</th><td data-label="Red Team">проверить реальную реакцию защиты</td><td data-label="Purple Team">быстро улучшить правила детектирования</td></tr>
+            <tr><th scope="row" class="rtr-table__key">Результат</th><td data-label="Red Team">путь к цели и пробелы детектирования</td><td data-label="Purple Team">настроенные и проверенные правила</td></tr>
+            <tr><th scope="row" class="rtr-table__key">Когда выбрать</th><td data-label="Red Team">проверка зрелости SOC</td><td data-label="Purple Team">ускоренная донастройка защиты</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="white-team">White Team: организаторы учений</h2>
+      <p>White Team - это представители заказчика, которые организуют учения и следят за соблюдением правил. White Team знает о проекте, согласует правила проведения (RoE) и может остановить атаку при угрозе бизнесу.</p>
+      <p>White Team держит связь с Red Team во время операции и получает промежуточные сводки о глубине проникновения. Лаборатория Касперского и Angara Security отдельно упоминают взаимодействие с White Team в описании услуги.</p>
+      <p>Международная рамка <a href="https://www.ecb.europa.eu/paym/cyber-resilience/tiber-eu/html/index.en.html" target="_blank" rel="noopener">TIBER-EU</a> разделяет участников учений именно на Red Team, Blue Team и White Team.</p>
+
+      <h2 id="vmeste">Как команды работают вместе</h2>
+      <p>Полный цикл учений объединяет все четыре команды в 5 шагов:</p>
+      <ol>
+        <li><strong>White Team</strong> согласует с Red Team цель и правила проведения.</li>
+        <li><strong>Red Team</strong> проводит атаку скрытно от Blue Team.</li>
+        <li><strong>Blue Team</strong> обнаруживает и отражает атаку в обычном режиме.</li>
+        <li><strong>White Team</strong> при необходимости останавливает атаку и фиксирует ход операции.</li>
+        <li><strong>Purple Team</strong> собирает Red и Blue вместе для разбора и настройки правил детектирования.</li>
+      </ol>
+      <p>Совместный разбор - обязательный шаг. Отчет Red Team без разбора не превращается в улучшения защиты. Awillix после проекта обучает Blue Team и помогает настроить правила корреляции.</p>
+
+      <h2 id="kakaya-nuzhna">Какая команда нужна вашей компании</h2>
+      <p>Выбор команды зависит от зрелости защиты:</p>
+      <ul>
+        <li><strong>Нет своего SOC.</strong> Начните с построения Blue Team и базового мониторинга.</li>
+        <li><strong>SOC работает, но не проверялся.</strong> Закажите Red Team для проверки реакции защиты.</li>
+        <li><strong>Нужна быстрая донастройка правил.</strong> Выберите Purple Team для совместной работы.</li>
+        <li><strong>Проверка по международной методике.</strong> Red Team по TIBER-EU или CBEST с участием White Team.</li>
+      </ul>
+      <p>Сравнение 12 команд Red Team в <a href="/">рейтинге</a>. Отличия Red Team от пентеста в гайде <a href="/red-team-vs-pentest/">Red Team vs пентест</a>.</p>
+
+      <h2 id="faq">Частые вопросы</h2>
+      <div class="rtr-acc rtr-acc--plain">
+        <details><summary><span>Чем Red Team отличается от Blue Team?</span><span class="rtr-acc__icon" aria-hidden="true"></span></summary><p class="rtr-acc__body">Red Team атакует инфраструктуру по правилам злоумышленников, Blue Team обнаруживает атаку и реагирует на нее. Red Team работает скрытно, Blue Team работает в обычном режиме и не знает о проекте.</p></details>
+        <details><summary><span>Что такое Purple Team?</span><span class="rtr-acc__icon" aria-hidden="true"></span></summary><p class="rtr-acc__body">Purple Team - это совместная работа Red Team и Blue Team над разбором атаки. Red Team показывает технику, Blue Team сразу настраивает правило детектирования и проверяет его срабатывание.</p></details>
+        <details><summary><span>Кто входит в White Team?</span><span class="rtr-acc__icon" aria-hidden="true"></span></summary><p class="rtr-acc__body">White Team - это представители заказчика, которые организуют учения, согласуют правила проведения и могут остановить атаку. White Team знает о проекте, в отличие от Blue Team.</p></details>
+      </div>
+
+      <nav class="rtr-related" aria-label="Связанные материалы">
+        <p class="rtr-label"><span class="rtr-label__slash">//</span> Связанные материалы</p>
+        <ul class="rtr-related__list">
+          <li><a href="/">Рейтинг компаний по Red Teaming</a></li>
+          <li><a href="/terminy/">Термины Red Teaming</a></li>
+          <li><a href="/ai-red-teaming/">AI Red Teaming</a></li>
+        </ul>
+      </nav>
+    </article>
+  </div>
+</section>

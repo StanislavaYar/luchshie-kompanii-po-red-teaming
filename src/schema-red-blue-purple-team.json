@@ -1,0 +1,31 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Red Team, Blue Team и Purple Team: роли в кибербезопасности",
+      "description": "Red Team атакует, Blue Team защищает, Purple Team объединяет их для разбора. Роли, задачи, инструменты команд и место White Team в учениях.",
+      "inLanguage": "ru-RU",
+      "datePublished": "2026-10-20",
+      "dateModified": "2026-10-20",
+      "author": { "@type": "Organization", "name": "Red Team Rating", "url": "https://luchshie-kompanii-po-red-teaming.com/" },
+      "publisher": { "@type": "Organization", "name": "Red Team Rating", "url": "https://luchshie-kompanii-po-red-teaming.com/" },
+      "mainEntityOfPage": "https://luchshie-kompanii-po-red-teaming.com/red-blue-purple-team/"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Чем Red Team отличается от Blue Team?", "acceptedAnswer": { "@type": "Answer", "text": "Red Team атакует инфраструктуру по правилам злоумышленников, Blue Team обнаруживает атаку и реагирует на нее. Red Team работает скрытно, Blue Team работает в обычном режиме и не знает о проекте." } },
+        { "@type": "Question", "name": "Что такое Purple Team?", "acceptedAnswer": { "@type": "Answer", "text": "Purple Team - это совместная работа Red Team и Blue Team над разбором атаки. Red Team показывает технику, Blue Team сразу настраивает правило детектирования и проверяет его срабатывание." } },
+        { "@type": "Question", "name": "Кто входит в White Team?", "acceptedAnswer": { "@type": "Answer", "text": "White Team - это представители заказчика, которые организуют учения, согласуют правила проведения и могут остановить атаку. White Team знает о проекте, в отличие от Blue Team." } }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Главная", "item": "https://luchshie-kompanii-po-red-teaming.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Red Team, Blue Team и Purple Team", "item": "https://luchshie-kompanii-po-red-teaming.com/red-blue-purple-team/" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://luchshie-kompanii-po-red-teaming.com/#organization",
+      "name": "Red Team Rating",
+      "url": "https://luchshie-kompanii-po-red-teaming.com/",
+      "email": "research@luchshie-kompanii-po-red-teaming.com",
+      "logo": "https://luchshie-kompanii-po-red-teaming.com/favicon.svg"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://luchshie-kompanii-po-red-teaming.com/#website",
+      "name": "Red Team Rating",
+      "url": "https://luchshie-kompanii-po-red-teaming.com/",
+      "inLanguage": "ru-RU",
+      "publisher": { "@id": "https://luchshie-kompanii-po-red-teaming.com/#organization" }
+    },
+    {
+      "@type": "Article",
+      "@id": "https://luchshie-kompanii-po-red-teaming.com/#article",
+      "headline": "Лучшие компании по Red Teaming в России 2026",
+      "description": "Рейтинг 12 компаний по Red Teaming в России: сроки, формат атаки, состав отчета и цены. Что такое Red Team в ИБ, этапы и отличия от пентеста.",
+      "inLanguage": "ru-RU",
+      "datePublished": "2026-10-20",
+      "dateModified": "2026-10-20",
+      "author": { "@id": "https://luchshie-kompanii-po-red-teaming.com/#organization" },
+      "publisher": { "@id": "https://luchshie-kompanii-po-red-teaming.com/#organization" },
+      "mainEntityOfPage": "https://luchshie-kompanii-po-red-teaming.com/"
+    },
+    {
+      "@type": "ItemList",
+      "name": "Рейтинг компаний по Red Teaming 2026",
+      "numberOfItems": 12,
+      "itemListOrder": "https://schema.org/ItemListOrderAscending",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Paranoid Security", "url": "https://luchshie-kompanii-po-red-teaming.com/#company-1" },
+        { "@type": "ListItem", "position": 2, "name": "Лаборатория Касперского", "url": "https://luchshie-kompanii-po-red-teaming.com/#company-2" },
+        { "@type": "ListItem", "position": 3, "name": "BI.ZONE", "url": "https://luchshie-kompanii-po-red-teaming.com/#company-3" },
+        { "@type": "ListItem", "position": 4, "name": "Positive Technologies", "url": "https://luchshie-kompanii-po-red-teaming.com/#company-4" },
+        { "@type": "ListItem", "position": 5, "name": "F6", "url": "https://luchshie-kompanii-po-red-teaming.com/#company-5" },
+        { "@type": "ListItem", "position": 6, "name": "Awillix", "url": "https://luchshie-kompanii-po-red-teaming.com/#company-6" },
+        { "@type": "ListItem", "position": 7, "name": "DSEC by Solar", "url": "https://luchshie-kompanii-po-red-teaming.com/#company-7" },
+        { "@type": "ListItem", "position": 8, "name": "Angara Security", "url": "https://luchshie-kompanii-po-red-teaming.com/#company-8" },
+        { "@type": "ListItem", "position": 9, "name": "Инфосистемы Джет", "url": "https://luchshie-kompanii-po-red-teaming.com/#company-9" },
+        { "@type": "ListItem", "position": 10, "name": "Информзащита", "url": "https://luchshie-kompanii-po-red-teaming.com/#company-10" },
+        { "@type": "ListItem", "position": 11, "name": "RTM Group", "url": "https://luchshie-kompanii-po-red-teaming.com/#company-11" },
+        { "@type": "ListItem", "position": 12, "name": "НТЦ Вулкан", "url": "https://luchshie-kompanii-po-red-teaming.com/#company-12" }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Что такое Red Teaming простыми словами?", "acceptedAnswer": { "@type": "Answer", "text": "Red Teaming - это заказанная компанией атака, которую проводят этичные специалисты по правилам реальных злоумышленников. Проверка длится от нескольких недель до года. Результат показывает, дойдет ли атакующий до критичного актива и заметит ли его SOC." } },
+        { "@type": "Question", "name": "Законно ли проводить Red Teaming?", "acceptedAnswer": { "@type": "Answer", "text": "Red Teaming законен при письменном договоре с владельцем инфраструктуры и согласованных правилах проведения (RoE). Договор определяет цели, границы и стоп-условия. Атака на системы без такого согласия подпадает под статьи 272-274 УК РФ." } },
+        { "@type": "Question", "name": "Сколько стоит Red Teaming в России?", "acceptedAnswer": { "@type": "Answer", "text": "Из 12 компаний рейтинга цену публикует только RTM Group: от 9 900 000 рублей. Остальные считают стоимость после согласования цели, периметра и векторов атаки." } },
+        { "@type": "Question", "name": "Сколько длится Red Teaming?", "acceptedAnswer": { "@type": "Answer", "text": "Red Teaming длится от нескольких недель до 12 месяцев. У Информзащиты обычный проект занимает около 6 месяцев, у Paranoid Security около 8 месяцев. Лаборатория Касперского отводит на моделирование атаки 5-12 недель." } },
+        { "@type": "Question", "name": "Чем Red Team отличается от Blue Team?", "acceptedAnswer": { "@type": "Answer", "text": "Red Team атакует инфраструктуру по правилам реальных злоумышленников, Blue Team обнаруживает атаку и реагирует на нее. Purple Team объединяет обе стороны для совместного разбора. После учений команды сопоставляют журнал атаки с журналами SIEM." } },
+        { "@type": "Question", "name": "Какие навыки нужны специалисту Red Team?", "acceptedAnswer": { "@type": "Answer", "text": "Специалист Red Team знает сетевые технологии, Active Directory, веб-приложения и техники обхода EDR. Команды опираются на матрицу MITRE ATT&CK из 14 тактик. Отдельные роли закрывают OSINT, социальную инженерию и разработку инструментов." } },
+        { "@type": "Question", "name": "Какие инструменты использует Red Team?", "acceptedAnswer": { "@type": "Answer", "text": "Red Team использует фреймворки управления атакой (C2), инструменты анализа Active Directory и платформы фишинга. Сильные команды пишут собственные полезные нагрузки, чтобы обойти антивирус и EDR. Awillix, например, указывает собственные нагрузки и нестандартные протоколы." } },
+        { "@type": "Question", "name": "Как оценивается эффективность Red Teaming?", "acceptedAnswer": { "@type": "Answer", "text": "Эффективность Red Teaming оценивают по трем метрикам: достигнута ли цель, на каком этапе защита заметила атаку и сколько времени заняло реагирование. Совместный разбор с Blue Team переводит эти метрики в изменения правил детектирования." } }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Главная", "item": "https://luchshie-kompanii-po-red-teaming.com/" }
+      ]
+    }
+  ]
+}

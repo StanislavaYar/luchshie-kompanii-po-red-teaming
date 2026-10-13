@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Термины Red Teaming: 20 понятий от APT до White Team</title>
+<meta name="description" content="Словарь Red Teaming: APT, Assumed Breach, BAS, C2, IoC, OPSEC, RoE, TTP, White Team и другие термины с короткими определениями и примерами.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://luchshie-kompanii-po-red-teaming.com/terminy/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Термины Red Teaming: 20 понятий от APT до White Team">
+<meta property="og:description" content="Словарь Red Teaming: APT, Assumed Breach, BAS, C2, IoC, OPSEC, RoE, TTP, White Team и другие термины с короткими определениями и примерами.">
+<meta property="og:url" content="https://luchshie-kompanii-po-red-teaming.com/terminy/">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:site_name" content="Red Team Rating">
+<meta name="theme-color" content="#141417">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="preload" href="../fonts/onest-cyrillic-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../fonts/unbounded-cyrillic-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/rtr.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "name": "Термины Red Teaming: 20 понятий от APT до White Team",
+      "description": "Словарь Red Teaming: APT, Assumed Breach, BAS, C2, IoC, OPSEC, RoE, TTP, White Team и другие термины с короткими определениями и примерами.",
+      "url": "https://luchshie-kompanii-po-red-teaming.com/terminy/",
+      "inLanguage": "ru-RU",
+      "dateModified": "2026-10-20",
+      "isPartOf": { "@type": "WebSite", "name": "Red Team Rating", "url": "https://luchshie-kompanii-po-red-teaming.com/" },
+      "publisher": { "@type": "Organization", "name": "Red Team Rating", "url": "https://luchshie-kompanii-po-red-teaming.com/", "email": "research@luchshie-kompanii-po-red-teaming.com" }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Главная", "item": "https://luchshie-kompanii-po-red-teaming.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Термины Red Teaming", "item": "https://luchshie-kompanii-po-red-teaming.com/terminy/" }
+      ]
+    }
+  ]
+}
+</script>
+<script src="../assets/rtr.js" defer></script>
+</head>
+<body>
+<a class="rtr-skip" href="#main">Перейти к содержанию</a>
+<header class="rtr-header" id="top" role="banner">
+  <div class="rtr-container rtr-header__bar">
+    <a class="rtr-logo" href="../" aria-label="Red Team Rating — на главную">Red Team Rating<span class="rtr-logo__dot" aria-hidden="true"></span></a>
+    <button class="rtr-nav-toggle" type="button" aria-expanded="false" aria-controls="rtr-nav" aria-label="Открыть меню"><span class="rtr-nav-toggle__icon" aria-hidden="true"></span></button>
+    <nav class="rtr-nav" id="rtr-nav" role="navigation" aria-label="Main navigation">
+      <ul class="rtr-nav__list">
+        <li><a class="rtr-nav__link" href="../">Рейтинг</a></li>
+        <li><a class="rtr-nav__link" href="../metodika-ocenki/">Методика</a></li>
+        <li class="rtr-nav__group">
+          <button class="rtr-nav__group-title" type="button" aria-haspopup="true">Гайды</button>
+          <ul class="rtr-nav__sub">
+            <li><a class="rtr-nav__link" href="../red-team-vs-pentest/">Red Team vs пентест</a></li>
+            <li><a class="rtr-nav__link" href="../red-blue-purple-team/">Red, Blue и Purple Team</a></li>
+            <li><a class="rtr-nav__link" href="../ai-red-teaming/">AI Red Teaming</a></li>
+          </ul>
+        </li>
+        <li><a class="rtr-nav__link" href="../ob-issledovanii/">Об исследовании</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<section class="rtr-band rtr-band--dark rtr-pagehero">
+  <div class="rtr-container">
+    <nav class="rtr-crumbs" aria-label="Хлебные крошки"><ol><li><a href="../">Главная</a></li><li><span aria-current="page">Термины Red Teaming</span></li></ol></nav>
+    <p class="rtr-label"><span class="rtr-label__slash">//</span> Словарь</p>
+    <h1 class="rtr-h1">Термины Red Teaming: словарь из 20 понятий</h1>
+    <p class="rtr-lead">Словарь объясняет 20 терминов, которые встречаются в рейтинге, профилях компаний и отчетах Red Team. Каждое определение умещается в 1-2 предложения и не требует контекста страницы.</p>
+    <p class="rtr-pagehero__meta"><span>Обновлено <time datetime="2026-10-20">20.10.2026</time></span></p>
+  </div>
+</section>
+<section class="rtr-band rtr-band--light">
+  <div class="rtr-container">
+    <article class="rtr-article rtr-prose">
+      <nav class="rtr-letters" aria-label="Навигация по буквам">
+        <a href="#bukva-a">A</a><a href="#bukva-b">B</a><a href="#bukva-c">C</a><a href="#bukva-e">E</a><a href="#bukva-i">I</a><a href="#bukva-m">M</a><a href="#bukva-o">O</a><a href="#bukva-p">P</a><a href="#bukva-r">R</a><a href="#bukva-s">S</a><a href="#bukva-t">T</a><a href="#bukva-w">W</a><a href="#bukva-g">Г</a><a href="#bukva-n">Н</a>
+      </nav>
+
+      <h2 id="latinica">Термины на латинице</h2>
+      <section class="rtr-gl-group" id="bukva-a" aria-label="Буква A">
+        <p class="rtr-gl-letter" aria-hidden="true">A</p>
+        <dl class="rtr-glossary">
+          <div><dt>APT (Advanced Persistent Threat)</dt><dd>Группировка, которая проводит длительную скрытую атаку на конкретную организацию. Red Team часто воспроизводит техники известных APT-группировок.</dd></div>
+          <div><dt>Assumed Breach</dt><dd>Сценарий, в котором Red Team начинает атаку уже внутри сети. Лаборатория Касперского использует его, чтобы проверить реакцию защиты на нарушителя с украденными учетными данными.</dd></div>
+        </dl>
+      </section>
+      <section class="rtr-gl-group" id="bukva-b" aria-label="Буква B">
+        <p class="rtr-gl-letter" aria-hidden="true">B</p>
+        <dl class="rtr-glossary">
+          <div><dt>BAS (Breach and Attack Simulation)</dt><dd>Класс систем, которые по расписанию запускают безопасные имитации атак. BAS проверяет срабатывание средств защиты, но не заменяет Red Team.</dd></div>
+          <div><dt>Blue Team</dt><dd>Служба ИБ и SOC, которые обнаруживают атаку и реагируют на нее. В учениях Red Team синяя команда обычно не знает о начале операции.</dd></div>
+        </dl>
+      </section>
+      <section class="rtr-gl-group" id="bukva-c" aria-label="Буква C">
+        <p class="rtr-gl-letter" aria-hidden="true">C</p>
+        <dl class="rtr-glossary">
+          <div><dt>C2 (Command and Control)</dt><dd>Инфраструктура, через которую атакующие управляют скомпрометированными узлами. Тактика Command and Control имеет в MITRE ATT&amp;CK код TA0011.</dd></div>
+          <div><dt>CBEST</dt><dd>Программа Банка Англии для проверки финансовых организаций атаками на основе аналитики угроз. Лаборатория Касперского указывает CBEST среди методик своих учений.</dd></div>
+        </dl>
+      </section>
+      <section class="rtr-gl-group" id="bukva-e" aria-label="Буква E">
+        <p class="rtr-gl-letter" aria-hidden="true">E</p>
+        <dl class="rtr-glossary">
+          <div><dt>EDR (Endpoint Detection and Response)</dt><dd>Система обнаружения атак на рабочих станциях и серверах. Обход EDR входит в этап закрепления у большинства команд из рейтинга.</dd></div>
+        </dl>
+      </section>
+      <section class="rtr-gl-group" id="bukva-i" aria-label="Буква I">
+        <p class="rtr-gl-letter" aria-hidden="true">I</p>
+        <dl class="rtr-glossary">
+          <div><dt>IoC (Indicator of Compromise)</dt><dd>Индикатор компрометации: хэш файла, IP-адрес, домен или артефакт атаки. Отчет Red Team с IoC помогает Blue Team дописать правила детектирования.</dd></div>
+        </dl>
+      </section>
+      <section class="rtr-gl-group" id="bukva-m" aria-label="Буква M">
+        <p class="rtr-gl-letter" aria-hidden="true">M</p>
+        <dl class="rtr-glossary">
+          <div><dt>MITRE ATT&amp;CK</dt><dd>Открытая база тактик и техник злоумышленников из 14 тактик для корпоративных сред. Команды Red Team строят по ней сценарии и отчеты.</dd></div>
+        </dl>
+      </section>
+      <section class="rtr-gl-group" id="bukva-o" aria-label="Буква O">
+        <p class="rtr-gl-letter" aria-hidden="true">O</p>
+        <dl class="rtr-glossary">
+          <div><dt>OPSEC (Operational Security)</dt><dd>Правила, которые скрывают действия Red Team от защиты. OPSEC включает шифрование каналов, минимальный шум в сети и собственные инструменты.</dd></div>
+          <div><dt>OSINT (Open Source Intelligence)</dt><dd>Разведка по открытым источникам: сайты, соцсети, утечки, реестры. OSINT открывает операцию и определяет первые векторы атаки.</dd></div>
+        </dl>
+      </section>
+      <section class="rtr-gl-group" id="bukva-p" aria-label="Буква P">
+        <p class="rtr-gl-letter" aria-hidden="true">P</p>
+        <dl class="rtr-glossary">
+          <div><dt>Purple Team</dt><dd>Формат совместной работы Red Team и Blue Team над разбором атаки. Цель Purple Team: превратить находки атакующих в правила обнаружения.</dd></div>
+        </dl>
+      </section>
+      <section class="rtr-gl-group" id="bukva-r" aria-label="Буква R">
+        <p class="rtr-gl-letter" aria-hidden="true">R</p>
+        <dl class="rtr-glossary">
+          <div><dt>RoE (Rules of Engagement)</dt><dd>Документ с правилами проведения операции: цели, границы, стоп-условия, контакты. RoE согласуют до начала атаки.</dd></div>
+        </dl>
+      </section>
+      <section class="rtr-gl-group" id="bukva-s" aria-label="Буква S">
+        <p class="rtr-gl-letter" aria-hidden="true">S</p>
+        <dl class="rtr-glossary">
+          <div><dt>SIEM (Security Information and Event Management)</dt><dd>Система сбора и корреляции событий безопасности. На разборе Red Team сверяет свой журнал действий с журналами SIEM.</dd></div>
+          <div><dt>SOC (Security Operations Center)</dt><dd>Центр мониторинга и реагирования на инциденты ИБ. Проверка SOC - главная цель большинства проектов Red Team.</dd></div>
+        </dl>
+      </section>
+      <section class="rtr-gl-group" id="bukva-t" aria-label="Буква T">
+        <p class="rtr-gl-letter" aria-hidden="true">T</p>
+        <dl class="rtr-glossary">
+          <div><dt>TIBER-EU</dt><dd>Европейская рамка для учений Red Team на основе аналитики угроз, разработанная Европейским центральным банком. TIBER-EU разделяет участников на Red Team, Blue Team и White Team.</dd></div>
+          <div><dt>TTP (Tactics, Techniques and Procedures)</dt><dd>Тактики, техники и процедуры злоумышленника. Red Team воспроизводит TTP, а не отдельные эксплойты.</dd></div>
+        </dl>
+      </section>
+      <section class="rtr-gl-group" id="bukva-w" aria-label="Буква W">
+        <p class="rtr-gl-letter" aria-hidden="true">W</p>
+        <dl class="rtr-glossary">
+          <div><dt>White Team</dt><dd>Организаторы учений на стороне заказчика. White Team знает о проекте, согласует RoE и может остановить атаку.</dd></div>
+        </dl>
+      </section>
+
+      <h2 id="kirillica">Термины на кириллице</h2>
+      <section class="rtr-gl-group" id="bukva-g" aria-label="Буква Г">
+        <p class="rtr-gl-letter" aria-hidden="true">Г</p>
+        <dl class="rtr-glossary">
+          <div><dt>Горизонтальное перемещение</dt><dd>Продвижение атакующего от первого скомпрометированного узла к другим системам сети. В MITRE ATT&amp;CK тактика Lateral Movement имеет код TA0008.</dd></div>
+        </dl>
+      </section>
+      <section class="rtr-gl-group" id="bukva-n" aria-label="Буква Н">
+        <p class="rtr-gl-letter" aria-hidden="true">Н</p>
+        <dl class="rtr-glossary">
+          <div><dt>Недопустимое событие</dt><dd>Результат атаки, который бизнес не может допустить: остановка производства, кража денег, утечка базы клиентов. Цель Red Team часто формулируется как недопустимое событие.</dd></div>
+        </dl>
+      </section>
+
+      <nav class="rtr-related" aria-label="Связанные материалы">
+        <p class="rtr-label"><span class="rtr-label__slash">//</span> Связанные материалы</p>
+        <ul class="rtr-related__list">
+          <li><a href="../red-team-vs-pentest/">Red Team vs пентест</a></li>
+          <li><a href="../red-blue-purple-team/">Red Team, Blue Team и Purple Team</a></li>
+          <li><a href="../metodika-ocenki/">Методика оценки</a></li>
+        </ul>
+      </nav>
+    </article>
+  </div>
+</section>
+</main>
+<footer class="rtr-footer" role="contentinfo">
+  <div class="rtr-container">
+    <div class="rtr-footer__top">
+      <div class="rtr-footer__about">
+        <a class="rtr-logo" href="../">Red Team Rating<span class="rtr-logo__dot" aria-hidden="true"></span></a>
+        <p>Исследование рынка Red Teaming в России и СНГ: 12 компаний, 7 критериев, данные со страниц услуг. Последняя проверка 20 октября 2026.</p>
+      </div>
+      <div class="rtr-footer__cols">
+        <div>
+          <p class="rtr-footer__title">Рейтинг</p>
+          <ul>
+            <li><a href="../">Рейтинг 2026</a></li>
+            <li><a href="../#comparison">Сводная таблица</a></li>
+            <li><a href="../#profili">Профили компаний</a></li>
+            <li><a href="../#faq">Частые вопросы</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="rtr-footer__title">Гайды</p>
+          <ul>
+            <li><a href="../red-team-vs-pentest/">Red Team vs пентест</a></li>
+            <li><a href="../red-blue-purple-team/">Red, Blue и Purple Team</a></li>
+            <li><a href="../ai-red-teaming/">AI Red Teaming</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="rtr-footer__title">Об исследовании</p>
+          <ul>
+            <li><a href="../ob-issledovanii/">Об исследовании</a></li>
+            <li><a href="../metodika-ocenki/">Методика</a></li>
+            <li><a href="../analiticheskaya-gruppa/">Аналитическая группа</a></li>
+            <li><a href="../proverka-dannyh/">Проверка данных</a></li>
+            <li><a href="../zayavka-na-uchastie/">Заявка на участие</a></li>
+            <li><a href="../obratnaya-svyaz/">Обратная связь</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="rtr-footer__title">Правовое</p>
+          <ul>
+            <li><a href="../obrabotka-dannyh/">Обработка данных</a></li>
+            <li><a href="../terminy/" aria-current="page">Термины</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="rtr-footer__bottom">
+      <span>© 2026 Red Team Rating</span>
+      <span>Ссылки на компании не являются партнерскими</span>
+    </div>
+  </div>
+</footer>
+<a class="rtr-totop" href="#top" aria-label="Наверх"><svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true" focusable="false"><path d="M9 15V3M3.5 8.5L9 3l5.5 5.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+</body>
+</html>

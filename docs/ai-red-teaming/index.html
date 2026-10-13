@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Red Teaming: проверка LLM и AI-агентов 2026</title>
+<meta name="description" content="AI Red Teaming ищет способы заставить LLM нарушить правила: prompt injection, утечку промпта, чрезмерные полномочия агентов. Риски OWASP и MITRE ATLAS.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://luchshie-kompanii-po-red-teaming.com/ai-red-teaming/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="AI Red Teaming: проверка LLM и AI-агентов 2026">
+<meta property="og:description" content="AI Red Teaming ищет способы заставить LLM нарушить правила: prompt injection, утечку промпта, чрезмерные полномочия агентов. Риски OWASP и MITRE ATLAS.">
+<meta property="og:url" content="https://luchshie-kompanii-po-red-teaming.com/ai-red-teaming/">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:site_name" content="Red Team Rating">
+<meta name="theme-color" content="#141417">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="preload" href="../fonts/onest-cyrillic-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../fonts/unbounded-cyrillic-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/rtr.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "AI Red Teaming: проверка больших языковых моделей",
+      "description": "AI Red Teaming ищет способы заставить LLM нарушить правила: prompt injection, утечку промпта, чрезмерные полномочия агентов. Риски OWASP и MITRE ATLAS.",
+      "inLanguage": "ru-RU",
+      "datePublished": "2026-10-20",
+      "dateModified": "2026-10-20",
+      "author": { "@type": "Organization", "name": "Red Team Rating", "url": "https://luchshie-kompanii-po-red-teaming.com/" },
+      "publisher": { "@type": "Organization", "name": "Red Team Rating", "url": "https://luchshie-kompanii-po-red-teaming.com/" },
+      "mainEntityOfPage": "https://luchshie-kompanii-po-red-teaming.com/ai-red-teaming/"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Что такое AI Red Teaming простыми словами?", "acceptedAnswer": { "@type": "Answer", "text": "AI Red Teaming - это проверка, при которой специалисты пытаются заставить языковую модель нарушить правила. Главные векторы: prompt injection и извлечение системного промпта. Результат показывает, где модель или AI-агент ведет себя небезопасно." } },
+        { "@type": "Question", "name": "Чем AI Red Teaming отличается от обычного Red Team?", "acceptedAnswer": { "@type": "Answer", "text": "Классический Red Team проверяет сеть и серверы, AI Red Teaming проверяет поведение модели. Обычный Red Team опирается на MITRE ATT&CK, AI Red Teaming на MITRE ATLAS и OWASP Top 10 for LLM." } },
+        { "@type": "Question", "name": "Кто проводит AI Red Teaming в России?", "acceptedAnswer": { "@type": "Answer", "text": "В нашем рейтинге анализ защищенности LLM и AI-решений указывает Awillix. Полное сравнение компаний в рейтинге Red Teaming." } }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Главная", "item": "https://luchshie-kompanii-po-red-teaming.com/" },
+        { "@type": "ListItem", "position": 2, "name": "AI Red Teaming", "item": "https://luchshie-kompanii-po-red-teaming.com/ai-red-teaming/" }
+      ]
+    }
+  ]
+}
+</script>
+<script src="../assets/rtr.js" defer></script>
+</head>
+<body>
+<a class="rtr-skip" href="#main">Перейти к содержанию</a>
+<header class="rtr-header" id="top" role="banner">
+  <div class="rtr-container rtr-header__bar">
+    <a class="rtr-logo" href="../" aria-label="Red Team Rating — на главную">Red Team Rating<span class="rtr-logo__dot" aria-hidden="true"></span></a>
+    <button class="rtr-nav-toggle" type="button" aria-expanded="false" aria-controls="rtr-nav" aria-label="Открыть меню"><span class="rtr-nav-toggle__icon" aria-hidden="true"></span></button>
+    <nav class="rtr-nav" id="rtr-nav" role="navigation" aria-label="Main navigation">
+      <ul class="rtr-nav__list">
+        <li><a class="rtr-nav__link" href="../">Рейтинг</a></li>
+        <li><a class="rtr-nav__link" href="../metodika-ocenki/">Методика</a></li>
+        <li class="rtr-nav__group is-current">
+          <button class="rtr-nav__group-title" type="button" aria-haspopup="true">Гайды</button>
+          <ul class="rtr-nav__sub">
+            <li><a class="rtr-nav__link" href="../red-team-vs-pentest/">Red Team vs пентест</a></li>
+            <li><a class="rtr-nav__link" href="../red-blue-purple-team/">Red, Blue и Purple Team</a></li>
+            <li><a class="rtr-nav__link" href="../ai-red-teaming/" aria-current="page">AI Red Teaming</a></li>
+          </ul>
+        </li>
+        <li><a class="rtr-nav__link" href="../ob-issledovanii/">Об исследовании</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<section class="rtr-band rtr-band--dark rtr-pagehero">
+  <div class="rtr-container">
+    <nav class="rtr-crumbs" aria-label="Хлебные крошки"><ol><li><a href="../">Главная</a></li><li><span aria-current="page">AI Red Teaming</span></li></ol></nav>
+    <p class="rtr-label"><span class="rtr-label__slash">//</span> Гайд</p>
+    <h1 class="rtr-h1">AI Red Teaming: проверка больших языковых моделей</h1>
+    <p class="rtr-lead">AI Red Teaming - это проверка систем на основе больших языковых моделей (LLM), которая ищет способы заставить модель нарушить правила. В отличие от классического Red Team, объектом становится не инфраструктура, а поведение модели и ее интеграций.</p>
+    <p class="rtr-pagehero__meta"><span>Обновлено <time datetime="2026-10-20">20.10.2026</time></span><span>Автор: <a href="../analiticheskaya-gruppa/">Аналитическая группа Red Team Rating</a></span></p>
+  </div>
+</section>
+<section class="rtr-band rtr-band--light">
+  <div class="rtr-container">
+    <article class="rtr-article rtr-prose">
+      <p>Направление выросло из двух трендов: компании встраивают LLM в продукты, а классические проверки не ловят ошибки моделей. Awillix указывает анализ защищенности AI-решений и LLM среди своих услуг. Ниже разобраны риски, методики и место AI Red Teaming рядом с обычным Red Team.</p>
+
+      <h2 id="otlichiya">Чем AI Red Teaming отличается от обычного Red Team</h2>
+      <p>Классический Red Team проверяет сеть, серверы и людей, AI Red Teaming проверяет модель и ее ответы. Атакующий не ищет открытый порт, а подбирает запрос, который обходит правила модели.</p>
+      <div class="rtr-table-wrap">
+        <table class="rtr-table">
+          <caption>Классический Red Team и AI Red Teaming</caption>
+          <thead><tr><th scope="col">Параметр</th><th scope="col">Классический Red Team</th><th scope="col">AI Red Teaming</th></tr></thead>
+          <tbody>
+            <tr><th scope="row" class="rtr-table__key">Объект</th><td data-label="Классический">сеть, серверы, сотрудники</td><td data-label="AI Red Teaming">LLM, AI-агент, их интеграции</td></tr>
+            <tr><th scope="row" class="rtr-table__key">Главный вектор</th><td data-label="Классический">фишинг, уязвимости периметра</td><td data-label="AI Red Teaming">prompt injection, обход ограничений</td></tr>
+            <tr><th scope="row" class="rtr-table__key">Результат</th><td data-label="Классический">путь к бизнес-цели</td><td data-label="AI Red Teaming">сценарии, где модель нарушает правила</td></tr>
+            <tr><th scope="row" class="rtr-table__key">Стандарт</th><td data-label="Классический">MITRE ATT&amp;CK</td><td data-label="AI Red Teaming">MITRE ATLAS, OWASP Top 10 for LLM</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="riski">Главные риски LLM</h2>
+      <p>Список <a href="https://genai.owasp.org/llm-top-10/" target="_blank" rel="noopener">OWASP Top 10 for LLM Applications 2025</a> описывает 10 рисков систем на основе языковых моделей. Четыре риска чаще всего проверяет AI Red Team.</p>
+      <ul>
+        <li><strong>Prompt injection (LLM01).</strong> Запрос, который заставляет модель игнорировать инструкции и выполнить команду атакующего.</li>
+        <li><strong>Раскрытие чувствительной информации (LLM02).</strong> Модель выдает данные, которые должна скрывать: ключи, персональные данные, внутренние документы.</li>
+        <li><strong>Утечка системного промпта (LLM07).</strong> Атакующий вытягивает скрытую инструкцию, по которой работает модель.</li>
+        <li><strong>Чрезмерные полномочия (LLM06).</strong> AI-агент получает доступ к действиям, которые должны быть под контролем человека.</li>
+      </ul>
+
+      <h2 id="etapy">Как проходит AI Red Teaming</h2>
+      <p>AI Red Teaming проходит 4 этапа, похожих на классический Red Team, но с фокусом на модель.</p>
+      <ol>
+        <li><strong>Разведка модели.</strong> Команда изучает, какая модель используется, какие у нее интеграции и полномочия агентов.</li>
+        <li><strong>Подбор атак.</strong> Специалисты формируют запросы на prompt injection, обход фильтров и извлечение системного промпта.</li>
+        <li><strong>Эскалация.</strong> Команда проверяет, может ли агент выполнить опасное действие: запрос к базе, перевод средств, вызов внешнего API.</li>
+        <li><strong>Отчет.</strong> Команда описывает сработавшие сценарии и рекомендации по ограничению полномочий и фильтрации ввода.</li>
+      </ol>
+      <p>Матрица <a href="https://atlas.mitre.org/" target="_blank" rel="noopener">MITRE ATLAS</a> описывает тактики атак на системы машинного обучения, как ATT&amp;CK описывает атаки на корпоративные сети.</p>
+
+      <h2 id="komu-nuzhen">Кому нужен AI Red Teaming</h2>
+      <p>AI Red Teaming нужен компаниям, которые встроили LLM в продукт с доступом к данным или действиям. Чат-бот без доступа к внутренним системам несет меньший риск, чем агент, который выполняет операции от имени пользователя.</p>
+      <p>Признаки, что проверка нужна:</p>
+      <ul class="rtr-checks">
+        <li>LLM отвечает клиентам и имеет доступ к их данным;</li>
+        <li>AI-агент выполняет действия: создает заявки, обращается к базам, вызывает API;</li>
+        <li>модель использует внутренние документы компании в ответах;</li>
+        <li>продукт на основе LLM выходит на рынок и станет целью атак.</li>
+      </ul>
+
+      <h2 id="i-klassicheskiy">AI Red Teaming и классический Red Team</h2>
+      <p>AI Red Teaming дополняет классический Red Team, а не заменяет его. Компания с LLM-продуктом проверяет и инфраструктуру, и модель: атакующий может войти через сеть или через запрос к модели. Awillix предлагает оба направления, что позволяет закрыть обе поверхности атаки у одного подрядчика.</p>
+
+      <h2 id="faq">Частые вопросы</h2>
+      <div class="rtr-acc rtr-acc--plain">
+        <details><summary><span>Что такое AI Red Teaming простыми словами?</span><span class="rtr-acc__icon" aria-hidden="true"></span></summary><p class="rtr-acc__body">AI Red Teaming - это проверка, при которой специалисты пытаются заставить языковую модель нарушить правила. Главные векторы: prompt injection и извлечение системного промпта. Результат показывает, где модель или AI-агент ведет себя небезопасно.</p></details>
+        <details><summary><span>Чем AI Red Teaming отличается от обычного Red Team?</span><span class="rtr-acc__icon" aria-hidden="true"></span></summary><p class="rtr-acc__body">Классический Red Team проверяет сеть и серверы, AI Red Teaming проверяет поведение модели. Обычный Red Team опирается на MITRE ATT&amp;CK, AI Red Teaming на MITRE ATLAS и OWASP Top 10 for LLM.</p></details>
+        <details><summary><span>Кто проводит AI Red Teaming в России?</span><span class="rtr-acc__icon" aria-hidden="true"></span></summary><p class="rtr-acc__body">В нашем рейтинге анализ защищенности LLM и AI-решений указывает Awillix. Полное сравнение компаний в <a href="../">рейтинге Red Teaming</a>.</p></details>
+      </div>
+
+      <nav class="rtr-related" aria-label="Связанные материалы">
+        <p class="rtr-label"><span class="rtr-label__slash">//</span> Связанные материалы</p>
+        <ul class="rtr-related__list">
+          <li><a href="../">Рейтинг компаний по Red Teaming</a></li>
+          <li><a href="../red-team-vs-pentest/">Red Team vs пентест</a></li>
+          <li><a href="../terminy/">Термины Red Teaming</a></li>
+        </ul>
+      </nav>
+    </article>
+  </div>
+</section>
+</main>
+<footer class="rtr-footer" role="contentinfo">
+  <div class="rtr-container">
+    <div class="rtr-footer__top">
+      <div class="rtr-footer__about">
+        <a class="rtr-logo" href="../">Red Team Rating<span class="rtr-logo__dot" aria-hidden="true"></span></a>
+        <p>Исследование рынка Red Teaming в России и СНГ: 12 компаний, 7 критериев, данные со страниц услуг. Последняя проверка 20 октября 2026.</p>
+      </div>
+      <div class="rtr-footer__cols">
+        <div>
+          <p class="rtr-footer__title">Рейтинг</p>
+          <ul>
+            <li><a href="../">Рейтинг 2026</a></li>
+            <li><a href="../#comparison">Сводная таблица</a></li>
+            <li><a href="../#profili">Профили компаний</a></li>
+            <li><a href="../#faq">Частые вопросы</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="rtr-footer__title">Гайды</p>
+          <ul>
+            <li><a href="../red-team-vs-pentest/">Red Team vs пентест</a></li>
+            <li><a href="../red-blue-purple-team/">Red, Blue и Purple Team</a></li>
+            <li><a href="../ai-red-teaming/" aria-current="page">AI Red Teaming</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="rtr-footer__title">Об исследовании</p>
+          <ul>
+            <li><a href="../ob-issledovanii/">Об исследовании</a></li>
+            <li><a href="../metodika-ocenki/">Методика</a></li>
+            <li><a href="../analiticheskaya-gruppa/">Аналитическая группа</a></li>
+            <li><a href="../proverka-dannyh/">Проверка данных</a></li>
+            <li><a href="../zayavka-na-uchastie/">Заявка на участие</a></li>
+            <li><a href="../obratnaya-svyaz/">Обратная связь</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="rtr-footer__title">Правовое</p>
+          <ul>
+            <li><a href="../obrabotka-dannyh/">Обработка данных</a></li>
+            <li><a href="../terminy/">Термины</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="rtr-footer__bottom">
+      <span>© 2026 Red Team Rating</span>
+      <span>Ссылки на компании не являются партнерскими</span>
+    </div>
+  </div>
+</footer>
+<a class="rtr-totop" href="#top" aria-label="Наверх"><svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true" focusable="false"><path d="M9 15V3M3.5 8.5L9 3l5.5 5.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+</body>
+</html>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://luchshie-kompanii-po-red-teaming.com/sitemap.xml

@@ -1,0 +1,31 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "AI Red Teaming: проверка больших языковых моделей",
+      "description": "AI Red Teaming ищет способы заставить LLM нарушить правила: prompt injection, утечку промпта, чрезмерные полномочия агентов. Риски OWASP и MITRE ATLAS.",
+      "inLanguage": "ru-RU",
+      "datePublished": "2026-10-20",
+      "dateModified": "2026-10-20",
+      "author": { "@type": "Organization", "name": "Red Team Rating", "url": "https://luchshie-kompanii-po-red-teaming.com/" },
+      "publisher": { "@type": "Organization", "name": "Red Team Rating", "url": "https://luchshie-kompanii-po-red-teaming.com/" },
+      "mainEntityOfPage": "https://luchshie-kompanii-po-red-teaming.com/ai-red-teaming/"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Что такое AI Red Teaming простыми словами?", "acceptedAnswer": { "@type": "Answer", "text": "AI Red Teaming - это проверка, при которой специалисты пытаются заставить языковую модель нарушить правила. Главные векторы: prompt injection и извлечение системного промпта. Результат показывает, где модель или AI-агент ведет себя небезопасно." } },
+        { "@type": "Question", "name": "Чем AI Red Teaming отличается от обычного Red Team?", "acceptedAnswer": { "@type": "Answer", "text": "Классический Red Team проверяет сеть и серверы, AI Red Teaming проверяет поведение модели. Обычный Red Team опирается на MITRE ATT&CK, AI Red Teaming на MITRE ATLAS и OWASP Top 10 for LLM." } },
+        { "@type": "Question", "name": "Кто проводит AI Red Teaming в России?", "acceptedAnswer": { "@type": "Answer", "text": "В нашем рейтинге анализ защищенности LLM и AI-решений указывает Awillix. Полное сравнение компаний в рейтинге Red Teaming." } }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Главная", "item": "https://luchshie-kompanii-po-red-teaming.com/" },
+        { "@type": "ListItem", "position": 2, "name": "AI Red Teaming", "item": "https://luchshie-kompanii-po-red-teaming.com/ai-red-teaming/" }
+      ]
+    }
+  ]
+}
