@@ -117,7 +117,7 @@ build_page() { # slug(empty=root) name title description crumb ogtype
     echo '</script>'
     echo "<script src=\"${base}assets/rtr.js\" defer></script>"
     echo '</head>'
-    echo '<body>'
+    echo '<body id="top">'
     cat "$TMP/header.html"
     echo '<main id="main">'
     cat "$TMP/content.html"

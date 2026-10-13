@@ -34,6 +34,12 @@
     var toggleTop = function () { totop.classList.toggle('is-visible', window.scrollY > window.innerHeight); };
     window.addEventListener('scroll', toggleTop, { passive: true });
     toggleTop();
+    // Native jump to #top (on <body>); just keep the URL clean afterwards
+    totop.addEventListener('click', function () {
+      setTimeout(function () {
+        if (history.replaceState) history.replaceState(null, '', location.pathname + location.search);
+      }, 0);
+    });
   }
 
   if (!('IntersectionObserver' in window)) return;
